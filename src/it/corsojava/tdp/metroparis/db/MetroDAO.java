@@ -102,6 +102,7 @@ public class MetroDAO {
 	}
 	
 	public List<CoppiaID> getAllFermateConnesse() {
+//		Questa query ci assicura di estrarre tutti gli archi senza duplicati
 		String sql = "SELECT DISTINCT id_stazP, id_stazA " + 
 				"FROM connessione";
 		Connection conn = DBConnect.getConnection();
@@ -116,6 +117,7 @@ public class MetroDAO {
 			}
 			st.close();
 			conn.close();
+//			Ci ritorna tutti gli archi del del grafo (cioè tutte le connessioni tra le varie fermate)
 			return archi;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -1,7 +1,7 @@
 package it.corsojava.tdp.metroparis.bean;
 
 public class CoppiaID {
-	
+//	Questo oggetto contiene la coppia numero fermata di partenza e numero fermata di arrivo di un certo arco
 	int idPartenza;
 	int idArrivo;
 	
