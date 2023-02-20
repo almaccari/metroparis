@@ -15,7 +15,7 @@ public class DBConnect {
 			ds = new HikariDataSource();
 			ds.setJdbcUrl(jdbcURL);
 			ds.setUsername("root");
-			ds.setPassword("Macintosh10");
+			ds.setPassword("12345678");
 		}
 		
 		try {
